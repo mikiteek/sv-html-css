@@ -12,7 +12,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #000;
-  font-size: 0;
+  /* font-size: 0; */
 }
 img {
   max-width: 100%;
@@ -22,7 +22,6 @@ img {
 .wrapper {
   width: 1200px;
   margin: 0 auto;
-  /* position: relative; */
 }
 
 /* HEADER PAGE*/
@@ -43,7 +42,6 @@ img {
 }
 h1 {
   display: inline-block;
-  /* margin-right: ; */
   width: 220px;
   font-size: 30px;
   font-weight: 400;
@@ -51,10 +49,6 @@ h1 {
 
 .header-general {
   background-color: #ff6624;
-  /* display: grid;
-  grid-template-columns: 20% 1fr 20%;
-  grid-template-rows: 50px 50px 50px;
-  grid-template-areas: 'h1 nav nav' 'catalogue search favorite'; */
 }
 .header-nav {
   width: 970px;
@@ -133,4 +127,46 @@ h1 {
   border: #fff solid 2px;
   border-radius: 3px;
   padding-top: 4px;
+}
+
+/* FOOTER PAGE*/
+.footer-page {
+  background-color: #ff6624;
+}
+
+/* M A I N   P A G E*/
+.main-page {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 300px 50px 350px 350px 1fr;
+  grid-template-areas: 'menu slider' 'manufactures manufactures' 'laptops laptops' 'popular popular' 'additional additional';
+}
+aside {
+  grid-area: menu;
+}
+.slider-promotions {
+  grid-area: slider;
+}
+.manufacture {
+  grid-area: manufactures;
+}
+.section-laptops {
+  grid-area: laptops;
+}
+.section-popular {
+  grid-area: popular;
+}
+.additional {
+  grid-area: additional;
+}
+.manufacture ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.manufacture li {
+  list-style: none;
+  flex: 1 auto;
+  max-width: 150px;
 }
