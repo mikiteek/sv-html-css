@@ -11,8 +11,126 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  color: #000;
+  font-size: 0;
 }
 img {
   max-width: 100%;
   height: auto;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+/* HEADER PAGE*/
+.header-page a {
+  text-decoration: none;
+  text-align: center;
+}
+.header-banner {
+  width: auto;
+  height: 30px;
+  background-color: #ffa382;
+  padding-top: 4px;
+}
+.header-banner a {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+}
+h1 {
+  display: inline-block;
+  /* margin-right: ; */
+  width: 220px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.header-general {
+  background-color: #ff6624;
+  /* display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-areas: 'h1 nav nav' 'catalogue search favorite'; */
+}
+.header-nav {
+  width: 970px;
+  display: inline-block;
+  position: relative;
+}
+.header-nav-list-right {
+  position: absolute;
+  right: 0;
+}
+.header-nav ul {
+  display: inline-block;
+}
+.header-nav li {
+  display: inline-block;
+}
+.header-nav li:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.page-language li:not(:last-child) {
+  margin-right: 10px;
+}
+.header-nav a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+}
+.list-choose li {
+  display: inline-block;
+}
+
+.header-store-search-basket {
+  width: auto;
+  height: 50px;
+  padding-top: 5px;
+  position: relative;
+}
+.store-catalogue {
+  position: absolute;
+}
+.input-search {
+  padding-top: 3px;
+  width: 600px;
+  position: absolute;
+  left: 350px;
+}
+.input-search input {
+  width: 500px;
+  height: 30px;
+}
+.input-search button {
+  width: 30px;
+  height: 30px;
+}
+.list-choose {
+  padding-top: 5px;
+  position: absolute;
+  right: 10px;
+}
+.list-choose a {
+  font-size: 18px;
+  line-height: 24px;
+}
+.list-choose li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.store-catalogue a {
+  display: inline-block;
+  width: 155px;
+  height: 35px;
+  background-color: #428bca;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  border: #fff solid 2px;
+  border-radius: 3px;
+  padding-top: 4px;
 }
