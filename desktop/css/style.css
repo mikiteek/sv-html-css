@@ -293,3 +293,19 @@ aside {
 .show-more a:hover {
   font-weight: 600;
 }
+
+/* Block with additional information*/
+.additional-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.additional-desc {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
