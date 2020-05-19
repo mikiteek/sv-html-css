@@ -12,7 +12,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #000;
-  /* font-size: 0; */
 }
 img {
   max-width: 100%;
@@ -32,10 +31,9 @@ li {
 }
 
 /* -- HEADER PAGE -- */
-/* .header-page {
-  display: flex;
-  flex-direction: column;
-} */
+.header-page {
+  margin-bottom: 20px;
+}
 /* header banner */
 .header-banner {
   width: auto;
@@ -61,9 +59,6 @@ h1 {
 }
 .header-nav {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -180,14 +175,77 @@ aside {
 .additional {
   grid-area: additional;
 }
-.manufacture ul {
+
+/* ASIDE MENU */
+
+.aside-menu li {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* slider with promo */
+.slider-promotions {
+  height: 300px;
+  background-image: url('https://i.citrus.ua/uploads/banana/2020/may/1066400-14.jpg?_t=1589286291');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.slider-nav-promotions {
+  background: linear-gradient(143.92deg, #fb6c46 -0.14%, #d14a9a 106.86%), #fff;
+}
+.slider-nav-promotions ul {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
-.manufacture li {
-  list-style: none;
-  flex: 1 auto;
-  max-width: 150px;
+
+.slider-nav-promotions a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.slider-nav-promotions a:hover {
+  color: #00f;
+}
+.slider-ctrl {
+  position: absolute;
+  top: 50%;
+  position: relative;
+}
+.slider-ctrl-prev,
+.slider-ctrl-next {
+  position: absolute;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-50%);
+}
+.slider-ctrl-prev {
+  left: 0;
+  background-image: url('../img/icons/slider-left.png');
+}
+.slider-ctrl-next {
+  right: 0;
+  background-image: url('../img/icons/slider-right.png');
+}
+.slider-ctrl button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+/*  MANUFACTURER */
+.manufacture-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.manufacture-list a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+.manufacture-list a:hover {
+  color: #00f;
 }
