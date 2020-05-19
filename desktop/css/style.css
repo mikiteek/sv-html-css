@@ -154,7 +154,7 @@ h1,
 .main-page {
   display: grid;
   grid-template-columns: 20% 1fr;
-  grid-template-rows: 300px 50px 350px 350px 1fr;
+  grid-template-rows: 300px 50px 400px 400px 1fr;
   grid-template-areas: 'menu slider' 'manufactures manufactures' 'laptops laptops' 'popular popular' 'additional additional';
 }
 aside {
@@ -236,6 +236,7 @@ aside {
 }
 
 /*  MANUFACTURER */
+
 .manufacture-list {
   display: flex;
   justify-content: space-between;
@@ -248,4 +249,47 @@ aside {
 }
 .manufacture-list a:hover {
   color: #00f;
+}
+
+/* S E C T I O N   L A P T O P S*/
+.section-laptops {
+  padding-top: 20px;
+}
+.section-laptops-list,
+.section-popular-list {
+  margin-bottom: 20px;
+}
+.section-laptops-title,
+.section-popular-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.section-laptops-list,
+.section-popular-list {
+  display: flex;
+  justify-content: space-between;
+}
+.section-laptops-list img,
+.section-popular-list img {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.section-laptops-list img:hover,
+.section-popular-list img:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.show-more {
+  display: flex;
+}
+.show-more a {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(23, 99, 241);
+  margin-left: auto;
+}
+.show-more a:hover {
+  font-weight: 600;
 }
