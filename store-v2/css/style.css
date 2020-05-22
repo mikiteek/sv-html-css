@@ -271,7 +271,9 @@ aside {
 .manufacture-list a:hover {
   color: #00f;
 }
-/* - laptops and popular section - */
+
+/* - Laptops and Popular section - */
+
 .section-laptops {
   padding-top: 20px;
 }
@@ -291,6 +293,7 @@ aside {
 .section-popular-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .section-laptops-list img,
 .section-popular-list img {
@@ -330,6 +333,85 @@ aside {
   margin-bottom: 20px;
 }
 
+/* -- F O O T E R -- */
+
+.footer-page {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-store-block,
+.footer-nav,
+.footer-mobile {
+  flex-grow: 1;
+}
+.footer-store-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer-checkout,
+.footer-support {
+  display: flex;
+  justify-content: space-between;
+}
+.support-phone,
+.checkout-phone {
+  flex-grow: 0.8;
+}
+
+.footer-reference-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 200px;
+  height: 35px;
+  background-color: #428bca;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  border: #fff solid 2px;
+  border-radius: 3px;
+}
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+.footer-nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer-nav li {
+  width: 100px;
+}
+
+.footer-mobile {
+  display: flex;
+}
+.footer-mobile-list {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.apple,
+.google {
+  display: block;
+  width: 130px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.google {
+  background-image: url('../img/icons/icon-google-play.png');
+}
+.apple {
+  background-image: url('../img/icons/icon-app-store.png');
+}
 /* visually-hidden helper */
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
