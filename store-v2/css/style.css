@@ -11,6 +11,7 @@ html {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -39,7 +40,7 @@ body {
   background-color: #ebe3e3;
 }
 .footer-main {
-  min-height: 200px;
+  min-height: 100px;
   background-color: #ff6624;
 }
 .container {
@@ -162,3 +163,185 @@ h1 {
 }
 
 /* -- M A I N -- */
+.main-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* aside - slider */
+.aside-slider {
+  display: flex;
+}
+aside {
+  flex-grow: 0.2;
+  display: flex;
+}
+.slider-promotions {
+  flex-grow: 1;
+}
+.aside-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.aside-menu li {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.slider-promotions {
+  height: 300px;
+  background-image: url('https://i.citrus.ua/uploads/banana/2020/may/1066400-14.jpg?_t=1589286291');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.slider-nav-promotions {
+  background: linear-gradient(143.92deg, #fb6c46 -0.14%, #d14a9a 106.86%), #fff;
+}
+.slider-nav-promotions ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.slider-nav-promotions li {
+  flex-grow: 1;
+  display: flex;
+}
+.slider-nav-promotions a {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.slider-nav-promotions a:hover {
+  color: #00f;
+}
+.slider-ctrl {
+  position: absolute;
+  top: 50%;
+  position: relative;
+}
+.slider-ctrl-prev,
+.slider-ctrl-next {
+  position: absolute;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(255, 211, 182);
+  transform: translateY(-100%);
+}
+.slider-ctrl-prev:hover,
+.slider-ctrl-next:hover {
+  background-color: rgb(238, 96, 96);
+}
+.slider-ctrl-prev {
+  left: 0;
+  background-image: url('../img/icons/slider-left.png');
+}
+.slider-ctrl-next {
+  right: 0;
+  background-image: url('../img/icons/slider-right.png');
+}
+.slider-ctrl button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+/* manufacture section*/
+.manufacture {
+  height: 60px;
+  display: flex;
+}
+.manufacture-list {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.manufacture-list a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.manufacture-list a:hover {
+  color: #00f;
+}
+/* - laptops and popular section - */
+.section-laptops {
+  padding-top: 20px;
+}
+.section-laptops-list,
+.section-popular-list {
+  margin-bottom: 20px;
+}
+.section-laptops-title,
+.section-popular-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.section-laptops-list,
+.section-popular-list {
+  display: flex;
+  justify-content: space-between;
+}
+.section-laptops-list img,
+.section-popular-list img {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.section-laptops-list img:hover,
+.section-popular-list img:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.show-more {
+  display: flex;
+}
+.show-more a {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(23, 99, 241);
+  margin-left: auto;
+}
+.show-more a:hover {
+  font-weight: 600;
+}
+
+/* Block with additional information*/
+.additional-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.additional-desc {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
