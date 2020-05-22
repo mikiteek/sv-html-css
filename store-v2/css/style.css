@@ -377,16 +377,13 @@ aside {
 }
 .footer-nav {
   display: flex;
-  justify-content: center;
 }
 .footer-nav ul {
+  flex-grow: 1;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-}
-.footer-nav li {
-  width: 100px;
 }
 
 .footer-mobile {
