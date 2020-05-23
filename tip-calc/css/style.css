@@ -50,8 +50,11 @@ main {
 
 /* M A I N*/
 .tip-decorator {
+  padding: 25px 25px;
   display: flex;
   justify-content: space-between;
+  border: solid 2px rgb(177, 172, 172);
+  border-radius: 5px;
 }
 
 #form-calc {
@@ -89,6 +92,27 @@ main {
 }
 #input-bill {
   text-align: center;
+}
+.result-tip,
+.result-total {
+  display: flex;
+  /* justify-content: space-around; */
+}
+.result {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.result p {
+  font-size: 40px;
+}
+.result-total-price {
+  font-weight: bold;
+}
+.result-tip-title,
+.result-total-title {
+  margin-right: auto;
 }
 
 /* F O O T E R */
