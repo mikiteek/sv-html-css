@@ -62,15 +62,14 @@ result.addEventListener(
     var bill = parseFloat(document.getElementById('input-bill').value);
     result_tip_title.innerHTML = 'Tip';
     result_total_title.innerHTML = 'Total';
-    result_tip_price.innerHTML = (
-      (bill / 100) *
-      Number(tip.value) *
-      Number(number.value)
-    ).toFixed(2);
-    result_total_price.innerHTML = (
-      (bill + (bill / 100) * Number(tip.value)) *
-      Number(number.value)
-    ).toFixed(2);
+    result_tip_price.innerHTML =
+      (((bill / 100) * Number(tip.value)) / Number(number.value)).toFixed(2) +
+      '$';
+    result_total_price.innerHTML =
+      (
+        (bill + (bill / 100) * Number(tip.value)) /
+        Number(number.value)
+      ).toFixed(2) + '$';
   },
   false,
 );
