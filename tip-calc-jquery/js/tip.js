@@ -55,13 +55,14 @@ $(function () {
     result_tip_title.html('Tip');
     result_total_title.html('Total');
     result_tip_price.html(
-      ((bill / 100) * Number(tip.val()) * Number(number.val())).toFixed(2),
+      (((bill / 100) * Number(tip.val())) / Number(number.val())).toFixed(2) +
+        '$',
     );
     result_total_price.html(
       (
-        (bill + (bill / 100) * Number(tip.val())) *
+        (bill + (bill / 100) * Number(tip.val())) /
         Number(number.val())
-      ).toFixed(2),
+      ).toFixed(2) + '$',
     );
   });
 });
