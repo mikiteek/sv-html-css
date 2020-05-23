@@ -58,7 +58,7 @@ main {
 }
 
 #form-calc {
-  width: 400px;
+  width: 350px;
   min-height: 300px;
   display: flex;
   justify-content: space-between;

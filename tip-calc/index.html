@@ -22,10 +22,10 @@
           <form id="form-calc">
             <div class="div-bill">
               <p class="bill-title">Bill</p>
-              <input id="input-bill" type="text" value="0.00" />
+              <input id="input-bill" type="text" value="100" />
             </div>
             <div class="div-till">
-              <p class="tip-title">Tip</p>
+              <p class="tip-title">Tip %</p>
               <div class="div-till-input-change">
                 <input
                   id="tip-minus"
@@ -33,7 +33,7 @@
                   type="button"
                   value="-"
                 />
-                <input id="input-tip" type="text" value="15%" />
+                <input id="input-tip" type="text" value="15" />
                 <input
                   id="tip-plus"
                   class="button-change"
@@ -64,12 +64,12 @@
           </form>
           <div class="result">
             <div class="result-tip">
-              <p class="result-tip-title"></p>
-              <p class="result-tip-price"></p>
+              <p class="result-tip-title" id="result-tip-title"></p>
+              <p class="result-tip-price" id="result-tip-price"></p>
             </div>
             <div class="result-total">
-              <p class="result-total-title"></p>
-              <p class="result-total-price"></p>
+              <p class="result-total-title" id="result-total-title"></p>
+              <p class="result-total-price" id="result-total-price"></p>
             </div>
           </div>
         </div>
