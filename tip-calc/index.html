@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="body-div">
+      <header>
+        <div class="title-page wrapper">
+          <h1>Tip calculator</h1>
+        </div>
+      </header>
+      <main>
+        <div class="tip-decorator wrapper">
+          <form id="form-calc">
+            <div class="div-bill">
+              <p class="bill-title">Bill</p>
+              <input id="input-bill" type="text" />
+            </div>
+            <div class="div-till">
+              <p class="tip-title">Tip</p>
+              <div class="div-till-input-change">
+                <input
+                  id="tip-minus"
+                  class="button-change"
+                  type="button"
+                  value="-"
+                />
+                <input id="input-tip" type="text" />
+                <input
+                  id="tip-plus"
+                  class="button-change"
+                  type="button"
+                  value="+"
+                />
+              </div>
+            </div>
+            <div class="div-number">
+              <p class="tip-title">Number of people</p>
+              <div class="div-number-input-change">
+                <input
+                  id="number-minus"
+                  class="button-change"
+                  type="button"
+                  value="-"
+                />
+                <input id="input-number" type="text" />
+                <input
+                  id="number-plus"
+                  class="button-change"
+                  type="button"
+                  value="+"
+                />
+              </div>
+            </div>
+            <input id="input-result" type="button" value="result" />
+          </form>
+          <div class="result">
+            <div class="result-tip">
+              <p class="result-tip-title"></p>
+              <p class="result-tip-price"></p>
+            </div>
+            <div class="result-total">
+              <p class="result-total-title"></p>
+              <p class="result-total-price"></p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-page wrapper">
+          <p class="footer-copyright">
+            &copy; Copyright 2015 | <span>Mykyteiek Sergii</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="js/tip.js"></script>
+</html>
