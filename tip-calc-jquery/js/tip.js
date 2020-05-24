@@ -1,3 +1,5 @@
+var bill = $('#input-bill');
+
 var tip_minus = $('#tip-minus');
 var tip_plus = $('#tip-plus');
 var tip = $('#input-tip');
@@ -51,16 +53,27 @@ $(function () {
 /* result function*/
 $(function () {
   result.click(function () {
-    var bill = parseFloat($('#input-bill').val());
+    if (bill.val() < 0) {
+      bill.val(Math.abs(bill.val()));
+    }
+    if (tip.val() < 0) {
+      tip.val(Math.abs(tip.val()));
+    }
+    if (number.val() < 0) {
+      number.val(Math.abs(number.val()));
+    }
     result_tip_title.html('Tip');
     result_total_title.html('Total');
     result_tip_price.html(
-      (((bill / 100) * Number(tip.val())) / Number(number.val())).toFixed(2) +
-        '$',
+      (
+        ((parseFloat(bill.val()) / 100) * Number(tip.val())) /
+        Number(number.val())
+      ).toFixed(2) + '$',
     );
     result_total_price.html(
       (
-        (bill + (bill / 100) * Number(tip.val())) /
+        (parseFloat(bill.val()) +
+          (parseFloat(bill.val()) / 100) * Number(tip.val())) /
         Number(number.val())
       ).toFixed(2) + '$',
     );
