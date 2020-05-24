@@ -1,3 +1,5 @@
+var bill = document.getElementById('input-bill');
+
 var tip_minus = document.getElementById('tip-minus');
 var tip_plus = document.getElementById('tip-plus');
 var tip = document.getElementById('input-tip');
@@ -59,15 +61,26 @@ number_plus.addEventListener(
 result.addEventListener(
   'click',
   function () {
-    var bill = parseFloat(document.getElementById('input-bill').value);
+    if (bill.value < 0) {
+      bill.value = Math.abs(bill.value);
+    }
+    if (tip.value < 0) {
+      tip.value = Math.abs(tip.value);
+    }
+    if (number.value < 0) {
+      number.value = Math.abs(number.value);
+    }
     result_tip_title.innerHTML = 'Tip';
     result_total_title.innerHTML = 'Total';
     result_tip_price.innerHTML =
-      (((bill / 100) * Number(tip.value)) / Number(number.value)).toFixed(2) +
-      '$';
+      (
+        ((parseFloat(bill.value) / 100) * Number(tip.value)) /
+        Number(number.value)
+      ).toFixed(2) + '$';
     result_total_price.innerHTML =
       (
-        (bill + (bill / 100) * Number(tip.value)) /
+        (parseFloat(bill.value) +
+          (parseFloat(bill.value) / 100) * Number(tip.value)) /
         Number(number.value)
       ).toFixed(2) + '$';
   },
