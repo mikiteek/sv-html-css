@@ -67,9 +67,8 @@ result.addEventListener(
     if (tip.value < 0) {
       tip.value = Math.abs(tip.value);
     }
-    if (number.value < 0) {
-      number.value = Math.abs(number.value);
-    }
+    number.value = Math.round(Math.abs(number.value));
+
     result_tip_title.innerHTML = 'Tip';
     result_total_title.innerHTML = 'Total';
     result_tip_price.innerHTML =
