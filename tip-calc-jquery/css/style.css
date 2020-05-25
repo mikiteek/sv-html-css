@@ -113,6 +113,13 @@ main {
 .result-tip-title,
 .result-total-title {
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-tip-title::after {
+  /* content: 'per person';
+  font-size: 12px; */
 }
 
 /* F O O T E R */

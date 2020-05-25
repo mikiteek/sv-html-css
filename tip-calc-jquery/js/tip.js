@@ -59,9 +59,8 @@ $(function () {
     if (tip.val() < 0) {
       tip.val(Math.abs(tip.val()));
     }
-    if (number.val() < 0) {
-      number.val(Math.abs(number.val()));
-    }
+    number.val(Math.round(Math.abs(number.val())));
+
     result_tip_title.html('Tip');
     result_total_title.html('Total');
     result_tip_price.html(
