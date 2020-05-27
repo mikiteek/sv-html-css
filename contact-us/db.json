@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 7,
+      "body": "some comV2",
+      "postId": 9
+    },
+    {
+      "id": 55,
+      "body": "some com FETCH",
+      "postId": 22
+    },
+    {
+      "id": 60,
+      "body": "some com dfdsfsfsdfsfsfdsfsfsf",
+      "postId": 89
+    },
+    {
+      "id": 80,
+      "body": "some com dfdsfsfsdfsfsfdsfsfsf",
+      "postId": 89
+    },
+    {
+      "id": "100",
+      "body": "some com 100",
+      "postId": "100"
+    }
+  ],
+  "profile": {
+    "name": "My code",
+    "lastName": "Test"
+  }
+}
