@@ -110,6 +110,10 @@ main {
 .result-total-price {
   font-weight: bold;
 }
+#result-tip-title-person {
+  font-size: 18;
+  font-style: italic;
+}
 .result-tip-title,
 .result-total-title {
   margin-right: auto;

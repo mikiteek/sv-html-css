@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #222;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+header {
+  height: 100px;
+  background-color: burlywood;
+}
+footer {
+  height: 100px;
+  background-color: burlywood;
+}
+/* F O R M*/
+main {
+  background-color: #222;
+  padding: 50px 0 50px;
+}
+.contact-title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.contact-desc {
+  font-family: 'Allura', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgb(119, 119, 119);
+  text-align: center;
+  margin-bottom: 68px;
+}
+.contact-input-block {
+  margin-bottom: 30px;
+  height: 210px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-text {
+  width: 455px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-text input {
+  height: 52px;
+  width: 100%;
+  padding-left: 20px;
+}
+.contact-textarea {
+  display: flex;
+  width: 455px;
+}
+.contact-textarea textarea {
+  padding: 18px 0 0 20px;
+  width: 100%;
+}
+.contact-text input,
+.contact-textarea textarea {
+  border-radius: 2px;
+  border: solid 1px rgb(204, 204, 204);
+  font-size: 16px;
+}
+.contact-text input::placeholder,
+.contact-textarea textarea::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: rgb(187, 187, 187);
+}
+.contact-text input:valid,
+.contact-textarea textarea:valid {
+  outline: solid 2px rgb(0, 255, 0);
+}
+.contact-text input:invalid,
+.contact-textarea textarea:invalid {
+  outline: solid 2px rgb(255, 0, 0);
+}
+.input-send-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 240px;
+  height: 66px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
