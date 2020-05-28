@@ -81,13 +81,10 @@ body {
 /* header nav secondary */
 .page-nav-secondary {
 }
-.store-catalogue {
-  /* align-items: center; */
-}
+
 .store-catalogue a {
   padding-top: 4px;
   text-align: center;
-  min-width: 155px;
   height: 35px;
   background-color: #428bca;
   font-size: 18px;
@@ -102,22 +99,16 @@ body {
   width: 24px;
   height: 24px;
 }
-
+.input-search {
+  display: flex;
+}
 .input-search input,
 .input-search button {
   height: 35px;
-  border-radius: 3px;
+  border-radius: 2px;
   font-size: 16px;
 }
-.input-search button {
-  /* width: 50px; */
-}
 
-.list-icons {
-  flex-grow: 0.05;
-  display: flex;
-  justify-content: space-between;
-}
 .list-icons button {
   width: 32px;
   height: 32px;
