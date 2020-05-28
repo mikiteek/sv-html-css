@@ -80,19 +80,13 @@ body {
 
 /* header nav secondary */
 .page-nav-secondary {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 .store-catalogue {
-  flex-grow: 0.1;
-  display: flex;
-  flex-wrap: wrap;
+  /* align-items: center; */
 }
 .store-catalogue a {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding-top: 4px;
+  text-align: center;
   min-width: 155px;
   height: 35px;
   background-color: #428bca;
@@ -108,10 +102,7 @@ body {
   width: 24px;
   height: 24px;
 }
-.input-search {
-  flex-grow: 1;
-  display: flex;
-}
+
 .input-search input,
 .input-search button {
   height: 35px;
@@ -119,12 +110,9 @@ body {
   font-size: 16px;
 }
 .input-search button {
-  width: 50px;
+  /* width: 50px; */
 }
-.input-search input {
-  padding-left: 10px;
-  width: 85%;
-}
+
 .list-icons {
   flex-grow: 0.05;
   display: flex;

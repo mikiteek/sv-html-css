@@ -1,5 +1,5 @@
 @media (max-width: 575px) {
-  .nav-list {
-    flex-direction: column;
+  .list-icons button {
+    display: none;
   }
 }

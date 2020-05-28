@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store-v2</title>
+   
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -20,17 +23,16 @@
             <a href="#">Any banner or important information</a>
           </article>
         </div>
-        <div class="header-page container">
-          <div class="page-navigation">
+          <div class="page-navigation container">
             <nav class="page-nav-primary row">
               <h1 class="col-lg-4 col-md-12">Online store</h1>
               <ul class="col-lg-8 col-md-12 nav-list row">
-                <li class="col-xl col-lg col-md col-sm-12"><a href="">Contact</a></li>
-                <li class="col-xl col-lg col-md col-sm-12"><a href="">Sale</a></li>
-                <li class="col-xl col-lg col-md col-sm-12"><a href="">Questions</a></li>
-                <li class="col-xl col-lg col-md col-sm-12"><a href="">City/Kyiv</a></li>
-                <li class="col-xl col-lg col-md col-sm-12"><a href="">Log in</a></li>
-                <li class="nav-list-item-language col-xl col-lg col-md col-sm-12">
+                <li class="col-md col-sm-12"><a href="">Contact</a></li>
+                <li class="col-md col-sm-12"><a href="">Sale</a></li>
+                <li class="col-md col-sm-12"><a href="">Questions</a></li>
+                <li class="col-md col-sm-12"><a href="">City/Kyiv</a></li>
+                <li class="col-md col-sm-12"><a href="">Log in</a></li>
+                <li class="nav-list-item-language col-md col-sm-12">
                   <ul class="nav-list-language row">
                     <li class="col-1"><a href="">EN</a></li>
                     <li class="col-1"><a href="">RU</a></li>
@@ -38,24 +40,22 @@
                   </ul>
                 </li>
               </ul>
-              <!-- <div class="grap"></div> -->
             </nav>
-            <div class="page-nav-secondary">
-              <div class="store-catalogue">
-                <a href="#">Store</a>
-                <a href="#" class="catalogue">Catalogue</a>
+            <div class="page-nav-secondary row ">
+              <div class="store-catalogue col-12 ">
+                <a class="col-11" href="#">Store</a>
+                <a class="col-11" href="#" class="catalogue">Catalogue</a>
               </div>
-              <form class="input-search" action="#">
-                <input type="text" placeholder="Search..." />
-                <button value="search">Go!</button>
-              </form>
-              <ul class="list-icons">
+                <form class="input-search col-12" action="#">
+                  <input class="col-9" type="text" placeholder="Search..." />
+                  <button class="col-2" value="search">Go!</button>                 
+                </form>
+              <ul class="list-icons col-12">
                 <!--Icons, there will be icon for favorite products and basket -->
                 <li><button class="button-favorite"></button></li>
                 <li><button class="button-basket"></button></li>
               </ul>
             </div>
-          </div>
         </div>
       </header>
       <main class="main-page">
