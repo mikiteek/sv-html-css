@@ -16,6 +16,7 @@ img {
 a {
   text-decoration: none;
   color: #242121;
+  display: block;
 }
 li {
   list-style: none;
@@ -70,6 +71,7 @@ body {
   flex-wrap: wrap;
   padding-top: 20px;
 }
+
 .page-nav-primary a:hover,
 .page-nav-primary a:focus {
   color: rgb(163, 41, 41);
@@ -148,8 +150,8 @@ h1 {
   justify-content: space-between;
 }
 .list-icons button {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border: none;
   background-color: transparent;
   background-position: center;
@@ -176,20 +178,25 @@ h1 {
   display: flex;
 }
 aside {
-  flex-grow: 0.2;
+  width: 300px;
   display: flex;
 }
 .slider-promotions {
-  flex-grow: 1;
+  width: 900px;
 }
 .aside-menu {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 .aside-menu li {
+  width: 100%;
   font-size: 18px;
   line-height: 26px;
+}
+.aside-menu a:hover {
+  color: #00f;
 }
 
 .slider-promotions {
@@ -431,6 +438,9 @@ aside {
 }
 .footer-nav {
   display: flex;
+}
+.footer-nav a:hover {
+  color: #00f;
 }
 .footer-nav ul {
   flex-grow: 1;
