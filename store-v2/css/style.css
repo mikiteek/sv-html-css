@@ -71,7 +71,6 @@ body {
   flex-wrap: wrap;
   padding-top: 20px;
 }
-
 .page-nav-primary a:hover,
 .page-nav-primary a:focus {
   color: rgb(163, 41, 41);
