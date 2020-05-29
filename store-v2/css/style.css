@@ -253,7 +253,6 @@ h1 {
 /* manufacture section*/
 .manufacture {
   height: 60px;
-  /* display: flex; */
   display: none;
 }
 .manufacture-list {
@@ -276,7 +275,7 @@ h1 {
 /* - Laptops and Popular section - */
 
 .section-laptops {
-  padding-top: 20px;
+  padding: 20px 0 20px 0;
 }
 .section-laptops-list,
 .section-popular-list {
@@ -284,21 +283,28 @@ h1 {
 }
 .section-laptops-title,
 .section-popular-title {
+  text-align: center;
   font-size: 30px;
   line-height: 36px;
   color: #000;
   font-weight: bold;
   margin-bottom: 10px;
 }
+.section-laptops-list li,
+.section-popular-list li {
+  width: 175px;
+  margin-bottom: 20px;
+}
 .section-laptops-list,
 .section-popular-list {
+  margin: auto;
+  width: 400px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .section-laptops-item-about {
-  padding: 5px;
+  padding: 10px;
   width: 175px;
   position: absolute;
   bottom: 10px;
@@ -306,6 +312,8 @@ h1 {
 }
 .section-laptops-item-desc {
   margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.2;
 }
 .section-laptops-item-price {
   padding-left: 20px;
@@ -355,7 +363,7 @@ h1 {
   background-image: url('../img/icons/icon-basket.png');
 }
 .show-more {
-  display: flex;
+  text-align: center;
 }
 .show-more a {
   font-size: 20px;

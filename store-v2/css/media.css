@@ -13,6 +13,13 @@
     justify-content: space-between;
     margin: auto;
   }
+  .section-laptops-list,
+  .section-popular-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 400px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -60,6 +67,10 @@
   .slider-promotions {
     display: block;
   }
+  .section-laptops-list,
+  .section-popular-list {
+    width: 690px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .nav-list {
@@ -95,5 +106,20 @@
   }
   .slider-promotions {
     width: 730px;
+  }
+  .manufacture {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+  .slider-promotions {
+    width: 920px;
+  }
+  .section-laptops-list,
+  .section-popular-list {
+    width: 1120px;
   }
 }
