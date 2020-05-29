@@ -392,32 +392,11 @@ h1 {
 }
 
 /* -- F O O T E R -- */
-
+.footer-main {
+  padding-bottom: 10px;
+}
 .footer-page {
   padding-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.footer-store-block,
-.footer-nav,
-.footer-mobile {
-  flex-grow: 1;
-}
-.footer-store-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.footer-checkout,
-.footer-support {
-  display: flex;
-  justify-content: space-between;
-}
-.support-phone,
-.checkout-phone {
-  flex-grow: 0.8;
 }
 
 .footer-reference-main {
@@ -433,28 +412,15 @@ h1 {
   border: #fff solid 2px;
   border-radius: 3px;
 }
-.footer-nav {
-  display: flex;
-}
+
 .footer-nav a:hover {
   color: #00f;
 }
-.footer-nav ul {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.footer-mobile {
-  display: flex;
+.footer-nav {
+  margin-bottom: 10px;
 }
 .footer-mobile-list {
-  margin-left: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 .apple,
 .google {
@@ -471,7 +437,7 @@ h1 {
   background-image: url('../img/icons/icon-app-store.png');
 }
 /* visually-hidden helper */
-.visually-hidden:not(:focus):not(:active),
+/* .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
 input[type='radio'].visually-hidden {
   position: absolute;
@@ -484,4 +450,4 @@ input[type='radio'].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
