@@ -22,7 +22,11 @@ body {
   font-weight: 400;
   line-height: 1.6;
 }
-
+.wrapper {
+  /* background-color: #ebe3e3; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 /* B A N N E R*/
 .wrapper-banner {
   background-color: #ffa382;
@@ -101,4 +105,96 @@ body {
 }
 .button-basket {
   background-image: url('../img/icons/icon-basket.png');
+}
+
+/* -- M A I N -- */
+
+/* aside - slider */
+.aside-slider {
+  display: flex;
+}
+.aside-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aside-menu li {
+  /* width: 100%; */
+  font-size: 20px;
+  line-height: 30px;
+}
+.aside-menu a:hover {
+  color: #00f;
+}
+.slider-promotions {
+  width: 500px;
+  display: none;
+}
+.slider-promotions {
+  height: 300px;
+  background-image: url('https://i.citrus.ua/uploads/banana/2020/may/1066400-14.jpg?_t=1589286291');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.slider-promotions header {
+  height: 30px;
+}
+.slider-nav-promotions {
+  background: linear-gradient(143.92deg, #fb6c46 -0.14%, #d14a9a 106.86%), #fff;
+}
+
+.slider-nav-promotions ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.slider-nav-promotions li {
+  flex-grow: 1;
+  display: flex;
+}
+.slider-nav-promotions a {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.slider-nav-promotions a:hover {
+  color: #00f;
+  background-color: rgba(105, 71, 71, 0.1);
+}
+.slider-ctrl {
+  position: absolute;
+  top: 50%;
+  position: relative;
+}
+.slider-ctrl-prev,
+.slider-ctrl-next {
+  position: absolute;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(255, 211, 182);
+  transform: translateY(-100%);
+}
+.slider-ctrl-prev:hover,
+.slider-ctrl-next:hover {
+  background-color: rgb(238, 96, 96);
+}
+.slider-ctrl-prev {
+  left: 0;
+  background-image: url('../img/icons/slider-left.png');
+}
+.slider-ctrl-next {
+  right: 0;
+  background-image: url('../img/icons/slider-right.png');
+}
+.slider-ctrl button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
 }

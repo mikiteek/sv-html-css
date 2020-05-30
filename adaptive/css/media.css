@@ -19,6 +19,13 @@
   .store-catalogue a {
     width: 255px;
   }
+  .slider-promotions {
+    width: 310px;
+    display: block;
+  }
+  .aside-menu li {
+    width: 200px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .nav-list li {
@@ -35,6 +42,9 @@
   .input-search input {
     width: 460px;
   }
+  .slider-promotions {
+    width: 310px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -48,10 +58,27 @@
     flex-grow: 2;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider-promotions {
+    width: 500px;
+  }
+}
+
 @media (min-width: 992px) {
   .list-icons {
     display: flex;
     margin-left: -15px;
     justify-content: space-between;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .slider-promotions {
+    width: 730px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider-promotions {
+    width: 910px;
   }
 }
