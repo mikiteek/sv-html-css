@@ -2,6 +2,15 @@
   .banner {
     height: 60px;
   }
+  .section-laptops-list li:not(:last-child),
+  .section-popular-list li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .section-laptops-list li,
+  .section-popular-list li {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (min-width: 576px) {
   .banner {
@@ -26,6 +35,11 @@
   .aside-menu li {
     width: 200px;
   }
+  .section-laptops-list,
+  .section-popular-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .nav-list li {
@@ -45,6 +59,14 @@
   .slider-promotions {
     width: 310px;
   }
+  .section-laptops-list li:not(:nth-last-child(-n + 2)),
+  .section-popular-list li:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 40px;
+  }
+  .section-laptops-list li:nth-child(2n + 1),
+  .section-popular-list li:nth-child(2n + 1) {
+    margin-right: auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -62,23 +84,44 @@
   .slider-promotions {
     width: 500px;
   }
-}
 
+  .section-laptops-list,
+  .section-popular-list {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section-laptops-list li:not(:nth-last-child(-n + 3)),
+  .section-popular-list li:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 40px;
+  }
+}
 @media (min-width: 992px) {
   .list-icons {
     display: flex;
     margin-left: -15px;
     justify-content: space-between;
   }
+  .manufacture {
+    display: flex;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .slider-promotions {
     width: 730px;
+  }
+  .section-laptops-list li:not(:nth-child(3n)),
+  .section-popular-list li:not(:nth-child(3n)) {
+    margin-right: 200px;
   }
 }
 
 @media (min-width: 1200px) {
   .slider-promotions {
     width: 910px;
+  }
+  .section-laptops-list,
+  .section-popular-list {
+    justify-content: space-between;
   }
 }

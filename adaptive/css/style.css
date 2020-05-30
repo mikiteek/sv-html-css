@@ -198,3 +198,148 @@ body {
   border: none;
   cursor: pointer;
 }
+
+/* manufacture section*/
+.manufacture {
+  height: 60px;
+  display: none;
+}
+.manufacture-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manufacture-list a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.manufacture-list a:hover {
+  color: #00f;
+}
+
+/* - Laptops and Popular section - */
+.section-laptops-list,
+.section-popular-list {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.section-laptops-title,
+.section-popular-title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.section-laptops-list li,
+.section-popular-list li {
+  width: 175px;
+}
+
+.section-laptops-item-about {
+  padding: 10px;
+  width: 175px;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+.section-laptops-item-desc {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.section-laptops-item-price {
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(75, 163, 75);
+}
+
+.block-products {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: relative;
+}
+.block-products:hover {
+  transform: scale(1.04);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: transform 0.2s linear;
+}
+.block-icons {
+  width: 76px;
+  height: 32px;
+  position: absolute;
+  top: 8px;
+  right: 0px;
+
+  z-index: -1;
+}
+.block-products:hover .block-icons {
+  z-index: 0;
+}
+.block-icons button:hover {
+  background-color: rgb(33, 184, 114);
+  transition: background-color 0.2s linear;
+}
+.block-icons button {
+  border: none;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(221, 72, 46, 0.63);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.icon-favorite {
+  background-image: url('../img/icons/icon-heart.png');
+}
+.icon-basket {
+  background-image: url('../img/icons/icon-basket.png');
+}
+.show-more {
+  text-align: center;
+}
+.show-more a {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(23, 99, 241);
+  margin-left: auto;
+}
+.show-more a:hover {
+  font-weight: 600;
+}
+
+/* Block with additional information*/
+.additional-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.additional-desc {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
