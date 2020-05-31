@@ -11,7 +11,12 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .apple {
+    margin-bottom: 5px;
+  }
 }
+
 @media (min-width: 576px) {
   .banner {
     height: 40px;
@@ -40,7 +45,30 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .check-sup-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-nav-list li {
+    width: 33.3333%;
+    display: flex;
+  }
+  .footer-nav-list li:nth-child(2),
+  .footer-nav-list li:nth-child(5) {
+    justify-content: center;
+  }
+  .footer-nav-list li:nth-child(3n) {
+    justify-content: flex-end;
+  }
 }
+
 @media (min-width: 576px) and (max-width: 767px) {
   .nav-list li {
     width: 33.3333%;
@@ -69,6 +97,15 @@
   }
 }
 
+@media (min-width: 576px) and (max-width: 991px) {
+  .footer-mobile-list {
+    flex-direction: row;
+  }
+  .apple {
+    margin-right: 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .nav-list {
     justify-content: space-between;
@@ -79,7 +116,11 @@
   .input-search input {
     flex-grow: 2;
   }
+  .check-sup-block {
+    flex-direction: column;
+  }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .slider-promotions {
     width: 500px;
@@ -90,12 +131,14 @@
     justify-content: space-between;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .section-laptops-list li:not(:nth-last-child(-n + 3)),
   .section-popular-list li:not(:nth-last-child(-n + 3)) {
     margin-bottom: 40px;
   }
 }
+
 @media (min-width: 992px) {
   .list-icons {
     display: flex;
@@ -105,7 +148,15 @@
   .manufacture {
     display: flex;
   }
+  .footer-mobile-list li {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .apple {
+    margin-bottom: 5px;
+  }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .slider-promotions {
     width: 730px;
@@ -122,6 +173,10 @@
   }
   .section-laptops-list,
   .section-popular-list {
+    justify-content: space-between;
+  }
+
+  .footer-nav-list {
     justify-content: space-between;
   }
 }
