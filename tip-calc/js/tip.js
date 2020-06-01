@@ -69,12 +69,6 @@ result.addEventListener(
       tip.value = Math.abs(tip.value);
     }
     number.value = Math.round(Math.abs(number.value));
-    if (number.value > 1) {
-      result_tip.innerHTML =
-        '<p class="result-tip-title" id="result-tip-title">Tip</p>' +
-        '<p class="result-tip-price" id="result-tip-price">f</p>' +
-        '<p class="result-tip-title-person" id="result-tip-title-person">Per person</p>';
-    }
 
     result_tip_title.innerHTML = 'Tip';
     result_total_title.innerHTML = 'Total';
