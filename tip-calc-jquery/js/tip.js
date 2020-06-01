@@ -1,58 +1,49 @@
-var bill = $('#input-bill');
+let bill = $('#input-bill');
 
-var tip_minus = $('#tip-minus');
-var tip_plus = $('#tip-plus');
-var tip = $('#input-tip');
+let tip_minus = $('#tip-minus');
+let tip_plus = $('#tip-plus');
+let tip = $('#input-tip');
 
-var number_minus = $('#number-minus');
-var number_plus = $('#number-plus');
-var number = $('#input-number');
+let number_minus = $('#number-minus');
+let number_plus = $('#number-plus');
+let number = $('#input-number');
 
-var result = $('#input-result');
-var result_tip_title = $('#result-tip-title');
-var result_tip_price = $('#result-tip-price');
-var result_total_title = $('#result-total-title');
-var result_total_price = $('#result-total-price');
+let result = $('#input-result');
+let result_tip_title = $('#result-tip-title');
+let result_tip_price = $('#result-tip-price');
+let result_total_title = $('#result-total-title');
+let result_total_price = $('#result-total-price');
 // /* for listen buttons + and - */
-$(function () {
-  tip_minus.click(function () {
+$(() => {
+  tip_minus.click(() => {
     if (Number(tip.val()) <= 0) {
       tip.val(0);
     } else {
       tip.val(Number(tip.val()) - 1);
     }
   });
-});
 
-$(function () {
-  tip_plus.click(function () {
+  tip_plus.click(() => {
     if (Number(tip.val()) >= 100) {
       tip.val(100);
     } else {
       tip.val(Number(tip.val()) + 1);
     }
   });
-});
 
-$(function () {
-  number_minus.click(function () {
+  number_minus.click(() => {
     if (Number(number.val()) <= 1) {
       number.val(1);
     } else {
       number.val(Number(number.val()) - 1);
     }
   });
-});
 
-$(function () {
-  number_plus.click(function () {
+  number_plus.click(() => {
     number.val(Number(number.val()) + 1);
   });
-});
 
-/* result function*/
-$(function () {
-  result.click(function () {
+  result.click(() => {
     if (bill.val() < 0) {
       bill.val(Math.abs(bill.val()));
     }
