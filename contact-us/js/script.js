@@ -82,7 +82,7 @@
 //     'json',
 //   );
 // };
-$('#input-send-button').click(function () {
+$('#input-send-button').click(() => {
   $.ajax({
     url: 'https://formspree.io/mikiteek@gmail.com',
     method: 'POST',
