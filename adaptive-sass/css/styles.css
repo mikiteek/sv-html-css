@@ -2,43 +2,41 @@
 *::before,
 *::after {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
+
 img {
   display: block;
   max-width: 100%;
-  height: auto;
-}
+  height: auto; }
+
 a {
   text-decoration: none;
-  color: #242121;
-}
+  color: #242121; }
+
 li {
-  list-style: none;
-}
+  list-style: none; }
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 1.6;
-}
+  line-height: 1.6; }
+
 .mg-bottom {
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 /* B A N N E R*/
 .wrapper-banner {
-  background-color: #ffa382;
-}
+  background-color: #ffa382; }
+
 .df-aic-jcc {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
+
 /* H E A D E R */
 /* page-nav row*/
 .wrapper-header {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #ff6624;
-}
+  background-color: #ff6624; }

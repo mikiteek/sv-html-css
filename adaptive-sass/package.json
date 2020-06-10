@@ -4,9 +4,12 @@
   "description": "online store",
   "main": "index.js",
   "scripts": {
-    "scss:build": "node-sass src/scss/styles.scss -o css",
-    "scss:watch": "node-sass --watch src/scss/styles.scss -o css",
-    "build": "npm run scss:build && npm run scss:watch"
+    "scss:build-main": "node-sass src/scss/styles.scss -o css",
+    "scss:build-media": "node-sass src/scss/media.scss -o css",
+    "scss:watch-main": "node-sass --watch src/scss/styles.scss -o css",
+    "scss:watch-media": "node-sass --watch src/scss/media.scss -o css",
+    "build-main": "npm run scss:build-main && npm run scss:watch-main",
+    "build-media": "npm run scss:build-media && npm run scss:watch-media"
   },
   "author": "Sergii Mykyteiek <mikiteek@gmail.com>",
   "license": "ISC",

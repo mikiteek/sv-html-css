@@ -29,7 +29,7 @@ body {
 .wrapper-banner {
   background-color: #ffa382;
 }
-.banner {
+.df-aic-jcc {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,8 +42,8 @@ body {
   padding-bottom: 10px;
   background-color: #ff6624;
 }
-.page-nav__list a:hover,
-.page-nav__list a:focus {
+.page-nav__list--link:hover,
+.page-nav__list--link:focus {
   color: rgb(163, 41, 41);
 }
 
