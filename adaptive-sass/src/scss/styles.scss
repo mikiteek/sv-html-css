@@ -25,15 +25,32 @@ body {
 .mg-bottom {
   margin-bottom: 20px;
 }
-
+%df-aic-jcc {
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@mixin font-style($family, $size, $height, $weight, $font-col, $upper: none) {
+  font-family: $family;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $font-col;
+  text-transform: $upper;
+}
+$font-montserrat: 'Montserrat', sans-serif;
 /* B A N N E R*/
 .wrapper-banner {
   background-color: #ffa382;
 }
-.df-aic-jcc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.banner {
+  @extend %df-aic-jcc;
 }
 /* H E A D E R */
 /* page-nav row*/
@@ -41,4 +58,27 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #ff6624;
+}
+.page-nav__list--link {
+  &:hover,
+  &:focus {
+    color: rgb(163, 41, 41);
+  }
+}
+/* second-nav row*/
+.store-catalogue__link {
+  @extend %df-aic-jcc;
+  @include font-style($font-montserrat, 18px, 1.6, 400, #fff, uppercase);
+  width: 290px;
+  height: 35px;
+  background-color: #428bca;
+  border: #fff solid 2px;
+  border-radius: 3px;
+}
+.catalogue::before {
+  margin-right: 10px;
+  content: '';
+  background-image: url('../img/icons/open-menu.png');
+  width: 24px;
+  height: 24px;
 }

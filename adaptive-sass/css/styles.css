@@ -25,14 +25,19 @@ body {
 .mg-bottom {
   margin-bottom: 20px; }
 
+.banner, .store-catalogue__link {
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
 /* B A N N E R*/
 .wrapper-banner {
   background-color: #ffa382; }
-
-.df-aic-jcc {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
 
 /* H E A D E R */
 /* page-nav row*/
@@ -40,3 +45,27 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #ff6624; }
+
+.page-nav__list--link:hover, .page-nav__list--link:focus {
+  color: #a32929; }
+
+/* second-nav row*/
+.store-catalogue__link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  width: 290px;
+  height: 35px;
+  background-color: #428bca;
+  border: #fff solid 2px;
+  border-radius: 3px; }
+
+.catalogue::before {
+  margin-right: 10px;
+  content: '';
+  background-image: url("../img/icons/open-menu.png");
+  width: 24px;
+  height: 24px; }
