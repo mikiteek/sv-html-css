@@ -233,7 +233,7 @@ body {
   font-weight: bold;
   margin-bottom: 10px;
 }
-.section__list li {
+.section__list--item {
   width: 175px;
 }
 
@@ -278,11 +278,11 @@ body {
 .item__link:hover .item__icons {
   z-index: 0;
 }
-.item__icons button:hover {
+.item__icons--btn:hover {
   background-color: rgb(33, 184, 114);
   transition: background-color 0.2s linear;
 }
-.item__icons button {
+.item__icons--btn {
   border: none;
   width: 32px;
   height: 32px;
