@@ -1,0 +1,16 @@
+{
+  "name": "adaptive-sass",
+  "version": "1.0.0",
+  "description": "online store",
+  "main": "index.js",
+  "scripts": {
+    "scss:build": "node-sass src/scss/styles.scss -o css",
+    "scss:watch": "node-sass --watch src/scss/styles.scss -o css",
+    "build": "npm run scss:build && npm run scss:watch"
+  },
+  "author": "Sergii Mykyteiek <mikiteek@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

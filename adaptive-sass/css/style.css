@@ -48,7 +48,7 @@ body {
 }
 
 /* second-nav row*/
-.store-catalogue a {
+.store-catalogue__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,26 +67,25 @@ body {
   width: 24px;
   height: 24px;
 }
-.input-search {
+.form {
   display: flex;
 }
-.input-search input,
-.input-search button {
+.form__item {
   height: 35px;
   border-radius: 3px;
   font-size: 16px;
 }
-.input-search button {
+.form__item--btn {
   width: 50px;
 }
-.input-search input {
+.form__item--search {
   padding-left: 10px;
   width: 240px;
 }
-.list-icons {
+.header-icons {
   display: none;
 }
-.list-icons button {
+.header-icons__btn {
   width: 32px;
   height: 32px;
   border: none;
@@ -95,7 +94,7 @@ body {
   background-repeat: no-repeat;
   cursor: pointer;
 }
-.list-icons button:hover {
+.header-icons__btn:hover {
   background-color: rgba(205, 92, 92, 0.5);
 }
 .button-favorite {

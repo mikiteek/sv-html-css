@@ -28,7 +28,7 @@
   .store-catalogue {
     display: flex;
   }
-  .store-catalogue a {
+  .store-catalogue__link {
     width: 255px;
   }
   .slider-promo {
@@ -78,7 +78,7 @@
   .page-nav__list li:nth-child(3n) {
     justify-content: flex-end;
   }
-  .input-search input {
+  .form__item--search {
     width: 460px;
   }
   .slider-promo {
@@ -105,10 +105,10 @@
   .page-nav__list {
     justify-content: space-between;
   }
-  .store-catalogue a {
+  .store-catalogue__link {
     width: 50%;
   }
-  .input-search input {
+  .form__item--search {
     flex-grow: 2;
   }
   .check-suppport {
@@ -133,7 +133,7 @@
 }
 
 @media (min-width: 992px) {
-  .list-icons {
+  .header-icons {
     display: flex;
     margin-left: -15px;
     justify-content: space-between;
