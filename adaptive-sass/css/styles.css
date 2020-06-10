@@ -35,6 +35,32 @@ body {
   -ms-flex-pack: center;
   justify-content: center; }
 
+.aside-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.slider-promo__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.form, .aside-slider, .slider-promo__list--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 /* B A N N E R*/
 .wrapper-banner {
   background-color: #ffa382; }
@@ -69,3 +95,122 @@ body {
   background-image: url("../img/icons/open-menu.png");
   width: 24px;
   height: 24px; }
+
+.form__item {
+  height: 35px;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase; }
+
+.form__item--btn {
+  width: 50px; }
+
+.form__item--search {
+  padding-left: 10px;
+  width: 240px; }
+
+.header-icons {
+  display: none; }
+
+.header-icons__btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer; }
+  .header-icons__btn:hover {
+    background-color: rgba(205, 92, 92, 0.5); }
+
+.button-favorite {
+  background-image: url("../img/icons/icon-heart.png"); }
+
+.button-basket {
+  background-image: url("../img/icons/icon-basket.png"); }
+
+.wrapper {
+  background-color: #ebe3e3;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.aside-menu {
+  width: 100%;
+  height: 100%; }
+
+.aside__menu--item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: none; }
+
+.aside__menu--link:hover {
+  color: #00f; }
+
+.slider-promo {
+  width: 500px;
+  display: none;
+  height: 300px;
+  background-image: url("https://i.citrus.ua/uploads/banana/2020/may/1066400-14.jpg?_t=1589286291");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.slider-promo__nav {
+  background: -o-linear-gradient(306.08deg, #fb6c46 -0.14%, #d14a9a 106.86%), #fff;
+  background: linear-gradient(143.92deg, #fb6c46 -0.14%, #d14a9a 106.86%), #fff; }
+
+.slider-promo__list--item {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
+
+.slider-promo__list--link {
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000;
+  text-transform: none; }
+  .slider-promo__list--link:hover {
+    color: #00f;
+    background-color: rgba(105, 71, 71, 0.1); }
+
+.slider-ctrl {
+  position: absolute;
+  top: 50%;
+  position: relative; }
+
+.slider-ctrl__btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffd3b6;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%); }
+  .slider-ctrl__btn:hover, .slider-ctrl__btn:focus {
+    background-color: #ee6060; }
+
+.slider-ctrl-prev {
+  left: 0;
+  background-image: url("../img/icons/slider-left.png"); }
+
+.slider-ctrl-next {
+  right: 0;
+  background-image: url("../img/icons/slider-right.png"); }
+
+/* manufacture section*/
