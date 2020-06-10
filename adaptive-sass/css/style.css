@@ -360,8 +360,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.apple,
-.google {
+.mobile-list__item--link {
   display: flex;
   justify-content: center;
   align-items: center;
