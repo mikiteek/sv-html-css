@@ -36,19 +36,19 @@ body {
 }
 
 /* H E A D E R */
-/* header-nav row*/
+/* page-nav row*/
 .wrapper-header {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #ff6624;
 }
-.nav-list a:hover,
-.nav-list a:focus {
+.page-nav__list a:hover,
+.page-nav__list a:focus {
   color: rgb(163, 41, 41);
 }
 
 /* second-nav row*/
-.store-catalogue a {
+.store-catalogue__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,26 +67,25 @@ body {
   width: 24px;
   height: 24px;
 }
-.input-search {
+.form {
   display: flex;
 }
-.input-search input,
-.input-search button {
+.form__item {
   height: 35px;
   border-radius: 3px;
   font-size: 16px;
 }
-.input-search button {
+.form__item--btn {
   width: 50px;
 }
-.input-search input {
+.form__item--search {
   padding-left: 10px;
   width: 240px;
 }
-.list-icons {
+.header-icons {
   display: none;
 }
-.list-icons button {
+.header-icons__btn {
   width: 32px;
   height: 32px;
   border: none;
@@ -95,7 +94,7 @@ body {
   background-repeat: no-repeat;
   cursor: pointer;
 }
-.list-icons button:hover {
+.header-icons__btn:hover {
   background-color: rgba(205, 92, 92, 0.5);
 }
 .button-favorite {
@@ -116,56 +115,53 @@ body {
 .aside-slider {
   display: flex;
 }
-.aside-menu {
+.aside__menu {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.aside-menu li {
+.aside__menu--item {
   /* width: 100%; */
   font-size: 20px;
   line-height: 30px;
 }
-.aside-menu a:hover {
+.aside__menu--link:hover {
   color: #00f;
 }
-.slider-promotions {
+.slider-promo {
   width: 500px;
   display: none;
 }
-.slider-promotions {
+.slider-promo {
   height: 300px;
   background-image: url('https://i.citrus.ua/uploads/banana/2020/may/1066400-14.jpg?_t=1589286291');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.slider-promotions header {
-  height: 30px;
-}
-.slider-nav-promotions {
+.slider-promo__nav {
   background: linear-gradient(143.92deg, #fb6c46 -0.14%, #d14a9a 106.86%), #fff;
 }
 
-.slider-nav-promotions ul {
+.slider-promo__list {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.slider-nav-promotions li {
+.slider-promo__list--item {
   flex-grow: 1;
   display: flex;
 }
-.slider-nav-promotions a {
+.slider-promo__list--link {
   width: 100%;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
   color: #000;
 }
-.slider-nav-promotions a:hover {
+.slider-promo__list--link:hover {
   color: #00f;
   background-color: rgba(105, 71, 71, 0.1);
 }
@@ -207,31 +203,29 @@ body {
   height: 60px;
   display: none;
 }
-.manufacture-list {
+.manufacture__list {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.manufacture-list a {
+.manufacture__list--link {
   font-size: 20px;
   font-weight: 600;
   color: #000;
 }
-.manufacture-list a:hover {
+.manufacture__list--link:hover {
   color: #00f;
 }
 
 /* - Laptops and Popular section - */
-.section-laptops-list,
-.section-popular-list {
+.section__list {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
-.section-laptops-title,
-.section-popular-title {
+.section__title {
   text-align: center;
   font-size: 30px;
   line-height: 36px;
@@ -239,40 +233,40 @@ body {
   font-weight: bold;
   margin-bottom: 10px;
 }
-.section-laptops-list li,
-.section-popular-list li {
+.section__list li {
   width: 175px;
 }
 
-.section-laptops-item-about {
+.item__info {
   padding: 10px;
   width: 175px;
   position: absolute;
   bottom: 10px;
   left: 0px;
 }
-.section-laptops-item-desc {
+.item__desc {
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 1.2;
 }
-.section-laptops-item-price {
+.item__price {
   padding-left: 20px;
   font-size: 20px;
   font-weight: bold;
   color: rgb(75, 163, 75);
 }
 
-.block-products {
+.item__link {
+  display: block;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   position: relative;
 }
-.block-products:hover {
+.item__link:hover {
   transform: scale(1.04);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: transform 0.2s linear;
 }
-.block-icons {
+.item__icons {
   width: 76px;
   height: 32px;
   position: absolute;
@@ -281,14 +275,14 @@ body {
 
   z-index: -1;
 }
-.block-products:hover .block-icons {
+.item__link:hover .item__icons {
   z-index: 0;
 }
-.block-icons button:hover {
+.item__icons button:hover {
   background-color: rgb(33, 184, 114);
   transition: background-color 0.2s linear;
 }
-.block-icons button {
+.item__icons button {
   border: none;
   width: 32px;
   height: 32px;
@@ -306,25 +300,25 @@ body {
 .show-more {
   text-align: center;
 }
-.show-more a {
+.show-more__link {
   font-size: 20px;
   font-weight: 400;
   color: rgb(23, 99, 241);
   margin-left: auto;
 }
-.show-more a:hover {
+.show-more__link:hover {
   font-weight: 600;
 }
 
 /* Block with additional information*/
-.additional-title {
+.additional__item--title {
   font-size: 30px;
   line-height: 36px;
   color: #000;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.additional-desc {
+.additional__item--desc {
   font-size: 18px;
   line-height: 24px;
   color: #000;
@@ -339,7 +333,7 @@ body {
   padding-bottom: 10px;
 }
 
-.check-sup-block,
+.check-suppport,
 .footer-nav {
   padding-bottom: 10px;
 }
@@ -358,15 +352,14 @@ body {
   border-radius: 3px;
 }
 
-.footer-nav a:hover {
+.footer-nav__list--link:hover {
   color: #00f;
 }
 .footer-mobile-list {
   display: flex;
   flex-direction: column;
 }
-.apple,
-.google {
+.mobile-list__item--link {
   display: flex;
   justify-content: center;
   align-items: center;

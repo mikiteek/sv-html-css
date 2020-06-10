@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
   </head>
+
   <body>
     <div class="wrapper-banner">
       <article class="container">
@@ -24,384 +25,416 @@
     </div>
     <div class="wrapper-header">
       <header class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="header-nav">
-              <div class="row align-items-baseline">
-                <div class="col-12 col-lg-3">
-                  <h1>Online store</h1>
-                </div>
-                <div class="col-12 col-lg-9">
-                  <ul class="nav-list">
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Sale</a></li>
-                    <li><a href="">Questions</a></li>
-                    <li><a href="">City / Kyiv</a></li>
-                    <li><a href="">Log in</a></li>
-                    <li><a href="">Language</a></li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
+        <nav class="page-nav row align-items-baseline">
+          <h1 class="page-title col-12 col-lg-3">Online store</h1>
+          <ul class="page-nav__list col-12 col-lg-9">
+            <li class="page-nav__list--item">
+              <a class="page-nav__list--link" href="#">Contact</a>
+            </li>
+            <li class="page-nav__list--item">
+              <a class="page-nav__list--link" href="#">Sale</a>
+            </li>
+            <li class="page-nav__list--item">
+              <a class="page-nav__list--link" href="#">Questions</a>
+            </li>
+            <li class="page-nav__list--item">
+              <a class="page-nav__list--link" href="#">City / Kyiv</a>
+            </li>
+            <li class="page-nav__list--item">
+              <a class="page-nav__list--link" href="#">Log in</a>
+            </li>
+            <li class="page-nav__list--item">
+              <a class="page-nav__list--link" href="#">Language</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="row second-nav">
+          <div class="store-catalogue col-12 col-md-5 col-lg-4">
+            <a class="store-catalogue__link" href="#">Store</a>
+            <a class="store-catalogue__link catalogue" href="#">Catalogue</a>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="second-nav">
-              <div class="row">
-                <div class="col-12 col-md-5 col-lg-4">
-                  <div class="store-catalogue">
-                    <a href="#">Store</a>
-                    <a href="#" class="catalogue">Catalogue</a>
-                  </div>
-                </div>
-                <div class="col-12 col-md-7 col-lg-7">
-                  <form class="input-search" action="#">
-                    <input type="text" placeholder="Search..." />
-                    <button value="search">Go!</button>
-                  </form>
-                </div>
-                <div class="col-12 col-lg-1">
-                  <ul class="list-icons">
-                    <li><button class="button-favorite"></button></li>
-                    <li><button class="button-basket"></button></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <form class="form col-12 col-md-7 col-lg-7" action="#">
+            <input
+              class="form__item form__item--search"
+              type="text"
+              placeholder="Search..."
+            />
+            <button class="form__item form__item--btn" value="search">
+              Go!
+            </button>
+          </form>
+          <ul class="header-icons col-12 col-lg-1">
+            <li class="header-icons__item">
+              <button class="header-icons__btn button-favorite"></button>
+            </li>
+            <li class="header-icons__item">
+              <button class="header-icons__btn button-basket"></button>
+            </li>
+          </ul>
         </div>
       </header>
     </div>
     <div class="wrapper">
       <main class="container">
         <div class="row mg-bottom">
-          <div class="col-12">
-            <div class="aside-slider">
-              <aside>
-                <menu class="aside-menu">
-                  <li><a href="#">Laptops</a></li>
-                  <li><a href="#">Smartphones</a></li>
-                  <li><a href="#">Monitors</a></li>
-                  <li><a href="#">Appliances</a></li>
-                  <li><a href="#">TVs</a></li>
-                  <li><a href="#">Photo and video</a></li>
-                  <li><a href="#">Component parts</a></li>
-                  <li><a href="#">Others</a></li>
-                </menu>
-              </aside>
-              <article class="slider-promotions">
-                <header>
-                  <nav class="slider-nav-promotions">
-                    <ul>
-                      <li><a href="#">Promotion</a></li>
-                      <li><a href="#">Outlet</a></li>
-                      <li><a href="#">Сhoose tour</a></li>
-                    </ul>
-                  </nav>
-                </header>
-                <!--Slider-->
-                <div class="slider-ctrl">
-                  <button class="slider-ctrl-prev"></button>
-                  <button class="slider-ctrl-next"></button>
-                </div>
-                <ul>
-                  <li></li>
+          <div class="col-12 aside-slider">
+            <aside class="aside">
+              <menu class="aside__menu">
+                <li class="aside__menu--item">
+                  <a class="aside__menu--link" href="#">Laptops</a>
+                </li>
+                <li class="aside__menu--item">
+                  <a class="aside__menu--link" href="#">Smartphones</a>
+                </li>
+                <li class="aside__menu--item">
+                  <a class="aside__menu--link" href="#">Monitors</a>
+                </li>
+                <li class="aside__menu--item">
+                  <a class="aside__menu--link" href="#">Appliances</a>
+                </li>
+                <li class="aside__menu--item">
+                  <a class="aside__menu--link" href="#">TVs</a>
+                </li>
+                <li class="aside__menu--item">
+                  <a class="aside__menu--link" href="#">Photo and video</a>
+                </li>
+                <li class="aside__menu--item">
+                  <a class="aside__menu--link" href="#">Component parts</a>
+                </li>
+                <li class="aside__menu--item">
+                  <a class="aside__menu--link" href="#">Others</a>
+                </li>
+              </menu>
+            </aside>
+            <article class="slider-promo">
+              <nav class="slider-promo__nav">
+                <ul class="slider-promo__list">
+                  <li class="slider-promo__list--item">
+                    <a class="slider-promo__list--link" href="#">Promotion</a>
+                  </li>
+                  <li class="slider-promo__list--item">
+                    <a class="slider-promo__list--link" href="#">Outlet</a>
+                  </li>
+                  <li class="slider-promo__list--item">
+                    <a class="slider-promo__list--link" href="#">Сhoose tour</a>
+                  </li>
                 </ul>
-              </article>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <section class="manufacture">
-              <h2 class="visually-hidden">Manufacturers</h2>
-              <ul class="manufacture-list">
-                <li><a href="#">Apple</a></li>
-                <li><a href="#">Samsung</a></li>
-                <li><a href="#">Sony</a></li>
-                <li><a href="#">Panasonic</a></li>
-                <li><a href="#">Xiaomi</a></li>
-                <li><a href="#">Asus</a></li>
-                <li><a href="#">Dell</a></li>
-                <li><a href="#">Acer</a></li>
-                <li><a href="#">Hewlett-Packard</a></li>
-              </ul>
-            </section>
-          </div>
-        </div>
-        <div class="row mg-bottom">
-          <div class="col-12">
-            <section class="section-laptops">
-              <h2 class="section-laptops-title">Laptops</h2>
-              <ul class="section-laptops-list">
-                <li>
-                  <div class="block-products">
-                    <a href="#">
-                      <div class="block-icons">
-                        <button class="icon-favorite"></button>
-                        <button class="icon-basket"></button>
-                      </div>
-                      <div class="image-block">
-                        <img src="img/laptop/img-full.png" alt="image" />
-                      </div>
-                      <div class="section-laptops-item-about">
-                        <p class="section-laptops-item-desc">
-                          HP Pavilion Gaming 15-ec0031ur Dark
-                        </p>
-                        <p class="section-laptops-item-price">800&#36;</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="block-products">
-                    <a href="#">
-                      <div class="block-icons">
-                        <button class="icon-favorite"></button>
-                        <button class="icon-basket"></button>
-                      </div>
-                      <div class="image-block">
-                        <img src="img/laptop/img-full.png" alt="image" />
-                      </div>
-                      <div class="section-laptops-item-about">
-                        <p class="section-laptops-item-desc">
-                          HP Pavilion Gaming 15-ec0031ur Dark
-                        </p>
-                        <p class="section-laptops-item-price">800&#36;</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="block-products">
-                    <a href="#">
-                      <div class="block-icons">
-                        <button class="icon-favorite"></button>
-                        <button class="icon-basket"></button>
-                      </div>
-                      <div class="image-block">
-                        <img src="img/laptop/img-full.png" alt="image" />
-                      </div>
-                      <div class="section-laptops-item-about">
-                        <p class="section-laptops-item-desc">
-                          HP Pavilion Gaming 15-ec0031ur Dark
-                        </p>
-                        <p class="section-laptops-item-price">800&#36;</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="block-products">
-                    <a href="#">
-                      <div class="block-icons">
-                        <button class="icon-favorite"></button>
-                        <button class="icon-basket"></button>
-                      </div>
-                      <div class="image-block">
-                        <img src="img/laptop/img-full.png" alt="image" />
-                      </div>
-                      <div class="section-laptops-item-about">
-                        <p class="section-laptops-item-desc">
-                          HP Pavilion Gaming 15-ec0031ur Dark
-                        </p>
-                        <p class="section-laptops-item-price">800&#36;</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="block-products">
-                    <a href="#">
-                      <div class="block-icons">
-                        <button class="icon-favorite"></button>
-                        <button class="icon-basket"></button>
-                      </div>
-                      <div class="image-block">
-                        <img src="img/laptop/img-full.png" alt="image" />
-                      </div>
-                      <div class="section-laptops-item-about">
-                        <p class="section-laptops-item-desc">
-                          HP Pavilion Gaming 15-ec0031ur Dark
-                        </p>
-                        <p class="section-laptops-item-price">800&#36;</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="block-products">
-                    <a href="#">
-                      <div class="block-icons">
-                        <button class="icon-favorite"></button>
-                        <button class="icon-basket"></button>
-                      </div>
-                      <div class="image-block">
-                        <img src="img/laptop/img-full.png" alt="image" />
-                      </div>
-                      <div class="section-laptops-item-about">
-                        <p class="section-laptops-item-desc">
-                          HP Pavilion Gaming 15-ec0031ur Dark
-                        </p>
-                        <p class="section-laptops-item-price">800&#36;</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-              <div class="show-more"><a href="#">Show more</a></div>
-            </section>
-          </div>
-        </div>
-        <div class="row mg-bottom">
-          <div class="col-12">
-            <section class="section-popular">
-              <h2 class="section-popular-title">Popular</h2>
-              <ul class="section-popular-list">
-                <li>
-                  <div class="block-products">
-                    <a href="#">
-                      <div class="block-icons">
-                        <button class="icon-favorite"></button>
-                        <button class="icon-basket"></button>
-                      </div>
-                      <div class="image-block">
-                        <img src="img/laptop/img-full.png" alt="image" />
-                      </div>
-                      <div class="section-laptops-item-about">
-                        <p class="section-laptops-item-desc">
-                          HP Pavilion Gaming 15-ec0031ur Dark
-                        </p>
-                        <p class="section-laptops-item-price">800&#36;</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="block-products">
-                    <a href="#">
-                      <div class="block-icons">
-                        <button class="icon-favorite"></button>
-                        <button class="icon-basket"></button>
-                      </div>
-                      <div class="image-block">
-                        <img src="img/laptop/img-full.png" alt="image" />
-                      </div>
-                      <div class="section-laptops-item-about">
-                        <p class="section-laptops-item-desc">
-                          HP Pavilion Gaming 15-ec0031ur Dark
-                        </p>
-                        <p class="section-laptops-item-price">800&#36;</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="block-products">
-                    <a href="#">
-                      <div class="block-icons">
-                        <button class="icon-favorite"></button>
-                        <button class="icon-basket"></button>
-                      </div>
-                      <div class="image-block">
-                        <img src="img/laptop/img-full.png" alt="image" />
-                      </div>
-                      <div class="section-laptops-item-about">
-                        <p class="section-laptops-item-desc">
-                          HP Pavilion Gaming 15-ec0031ur Dark
-                        </p>
-                        <p class="section-laptops-item-price">800&#36;</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="block-products">
-                    <a href="#">
-                      <div class="block-icons">
-                        <button class="icon-favorite"></button>
-                        <button class="icon-basket"></button>
-                      </div>
-                      <div class="image-block">
-                        <img src="img/laptop/img-full.png" alt="image" />
-                      </div>
-                      <div class="section-laptops-item-about">
-                        <p class="section-laptops-item-desc">
-                          HP Pavilion Gaming 15-ec0031ur Dark
-                        </p>
-                        <p class="section-laptops-item-price">800&#36;</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="block-products">
-                    <a href="#">
-                      <div class="block-icons">
-                        <button class="icon-favorite"></button>
-                        <button class="icon-basket"></button>
-                      </div>
-                      <div class="image-block">
-                        <img src="img/laptop/img-full.png" alt="image" />
-                      </div>
-                      <div class="section-laptops-item-about">
-                        <p class="section-laptops-item-desc">
-                          HP Pavilion Gaming 15-ec0031ur Dark
-                        </p>
-                        <p class="section-laptops-item-price">800&#36;</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="block-products">
-                    <a href="#">
-                      <div class="block-icons">
-                        <button class="icon-favorite"></button>
-                        <button class="icon-basket"></button>
-                      </div>
-                      <div class="image-block">
-                        <img src="img/laptop/img-full.png" alt="image" />
-                      </div>
-                      <div class="section-laptops-item-about">
-                        <p class="section-laptops-item-desc">
-                          HP Pavilion Gaming 15-ec0031ur Dark
-                        </p>
-                        <p class="section-laptops-item-price">800&#36;</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-              <div class="show-more"><a href="#">Show more</a></div>
-            </section>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="additional">
+              </nav>
+              <!--Slider-->
+              <div class="slider-ctrl">
+                <button class="slider-ctrl-prev"></button>
+                <button class="slider-ctrl-next"></button>
+              </div>
               <ul>
-                <li>
-                  <h3 class="additional-title">We offer</h3>
-                  <p class="additional-desc">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Aut odio repellat, fugit consectetur quam ut voluptas porro
-                    recusandae optio in obcaecati illo exercitationem dolore
-                    quas id, voluptate molestias minus neque!
-                  </p>
-                </li>
-                <li>
-                  <h3 class="additional-title">See also</h3>
-                  <p class="additional-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Animi impedit quis culpa repudiandae aut quos numquam
-                    distinctio doloremque, at veniam ipsum mollitia dolor ab.
-                    Sit libero modi nam deserunt harum.
-                  </p>
-                </li>
+                <li></li>
               </ul>
+            </article>
+          </div>
+        </div>
+        <div class="row">
+          <section class="manufacture col-12">
+            <h2 class="visually-hidden">Manufacturers</h2>
+            <ul class="manufacture__list">
+              <li class="manufacture__list--item">
+                <a class="manufacture__list--link" href="#">Apple</a>
+              </li>
+              <li class="manufacture__list--item">
+                <a class="manufacture__list--link" href="#">Samsung</a>
+              </li>
+              <li class="manufacture__list--item">
+                <a class="manufacture__list--link" href="#">Sony</a>
+              </li>
+              <li class="manufacture__list--item">
+                <a class="manufacture__list--link" href="#">Panasonic</a>
+              </li>
+              <li class="manufacture__list--item">
+                <a class="manufacture__list--link" href="#">Xiaomi</a>
+              </li>
+              <li class="manufacture__list--item">
+                <a class="manufacture__list--link" href="#">Asus</a>
+              </li>
+              <li class="manufacture__list--item">
+                <a class="manufacture__list--link" href="#">Dell</a>
+              </li>
+              <li class="manufacture__list--item">
+                <a class="manufacture__list--link" href="#">Acer</a>
+              </li>
+              <li class="manufacture__list--item">
+                <a class="manufacture__list--link" href="#">Hewlett-Packard</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="row mg-bottom">
+          <section class="section laptops col-12">
+            <h2 class="section__title">Laptops</h2>
+            <ul class="section__list">
+              <li class="section__list--item">
+                <a class="item__link" href="#">
+                  <div class="item__icons">
+                    <button class="icon-favorite"></button>
+                    <button class="icon-basket"></button>
+                  </div>
+                  <img
+                    class="item__image"
+                    src="img/laptop/img-full.png"
+                    alt="image"
+                  />
+                  <div class="item__info">
+                    <p class="item__desc">
+                      HP Pavilion Gaming 15-ec0031ur Dark
+                    </p>
+                    <p class="item__price">800&#36;</p>
+                  </div>
+                </a>
+              </li>
+              <li class="section__list--item">
+                <a class="item__link" href="#">
+                  <div class="item__icons">
+                    <button class="icon-favorite"></button>
+                    <button class="icon-basket"></button>
+                  </div>
+                  <img
+                    class="item__image"
+                    src="img/laptop/img-full.png"
+                    alt="image"
+                  />
+                  <div class="item__info">
+                    <p class="item__desc">
+                      HP Pavilion Gaming 15-ec0031ur Dark
+                    </p>
+                    <p class="item__price">800&#36;</p>
+                  </div>
+                </a>
+              </li>
+              <li class="section__list--item">
+                <a class="item__link" href="#">
+                  <div class="item__icons">
+                    <button class="icon-favorite"></button>
+                    <button class="icon-basket"></button>
+                  </div>
+                  <img
+                    class="item__image"
+                    src="img/laptop/img-full.png"
+                    alt="image"
+                  />
+                  <div class="item__info">
+                    <p class="item__desc">
+                      HP Pavilion Gaming 15-ec0031ur Dark
+                    </p>
+                    <p class="item__price">800&#36;</p>
+                  </div>
+                </a>
+              </li>
+              <li class="section__list--item">
+                <a class="item__link" href="#">
+                  <div class="item__icons">
+                    <button class="icon-favorite"></button>
+                    <button class="icon-basket"></button>
+                  </div>
+                  <img
+                    class="item__image"
+                    src="img/laptop/img-full.png"
+                    alt="image"
+                  />
+                  <div class="item__info">
+                    <p class="item__desc">
+                      HP Pavilion Gaming 15-ec0031ur Dark
+                    </p>
+                    <p class="item__price">800&#36;</p>
+                  </div>
+                </a>
+              </li>
+              <li class="section__list--item">
+                <a class="item__link" href="#">
+                  <div class="item__icons">
+                    <button class="icon-favorite"></button>
+                    <button class="icon-basket"></button>
+                  </div>
+                  <img
+                    class="item__image"
+                    src="img/laptop/img-full.png"
+                    alt="image"
+                  />
+                  <div class="item__info">
+                    <p class="item__desc">
+                      HP Pavilion Gaming 15-ec0031ur Dark
+                    </p>
+                    <p class="item__price">800&#36;</p>
+                  </div>
+                </a>
+              </li>
+              <li class="section__list--item">
+                <a class="item__link" href="#">
+                  <div class="item__icons">
+                    <button class="icon-favorite"></button>
+                    <button class="icon-basket"></button>
+                  </div>
+                  <img
+                    class="item__image"
+                    src="img/laptop/img-full.png"
+                    alt="image"
+                  />
+                  <div class="item__info">
+                    <p class="item__desc">
+                      HP Pavilion Gaming 15-ec0031ur Dark
+                    </p>
+                    <p class="item__price">800&#36;</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="show-more">
+              <a class="show-more__link" href="#">Show more</a>
             </div>
+          </section>
+        </div>
+        <div class="row mg-bottom">
+          <section class="section popular col-12">
+            <h2 class="section__title">Popular</h2>
+            <ul class="section__list">
+              <li class="section__list--item">
+                <a class="item__link" href="#">
+                  <div class="item__icons">
+                    <button class="icon-favorite"></button>
+                    <button class="icon-basket"></button>
+                  </div>
+                  <img
+                    class="item__image"
+                    src="img/laptop/img-full.png"
+                    alt="image"
+                  />
+                  <div class="item__info">
+                    <p class="item__desc">
+                      HP Pavilion Gaming 15-ec0031ur Dark
+                    </p>
+                    <p class="item__price">800&#36;</p>
+                  </div>
+                </a>
+              </li>
+              <li class="section__list--item">
+                <a class="item__link" href="#">
+                  <div class="item__icons">
+                    <button class="icon-favorite"></button>
+                    <button class="icon-basket"></button>
+                  </div>
+                  <img
+                    class="item__image"
+                    src="img/laptop/img-full.png"
+                    alt="image"
+                  />
+                  <div class="item__info">
+                    <p class="item__desc">
+                      HP Pavilion Gaming 15-ec0031ur Dark
+                    </p>
+                    <p class="item__price">800&#36;</p>
+                  </div>
+                </a>
+              </li>
+              <li class="section__list--item">
+                <a class="item__link" href="#">
+                  <div class="item__icons">
+                    <button class="icon-favorite"></button>
+                    <button class="icon-basket"></button>
+                  </div>
+                  <img
+                    class="item__image"
+                    src="img/laptop/img-full.png"
+                    alt="image"
+                  />
+                  <div class="item__info">
+                    <p class="item__desc">
+                      HP Pavilion Gaming 15-ec0031ur Dark
+                    </p>
+                    <p class="item__price">800&#36;</p>
+                  </div>
+                </a>
+              </li>
+              <li class="section__list--item">
+                <a class="item__link" href="#">
+                  <div class="item__icons">
+                    <button class="icon-favorite"></button>
+                    <button class="icon-basket"></button>
+                  </div>
+                  <img
+                    class="item__image"
+                    src="img/laptop/img-full.png"
+                    alt="image"
+                  />
+                  <div class="item__info">
+                    <p class="item__desc">
+                      HP Pavilion Gaming 15-ec0031ur Dark
+                    </p>
+                    <p class="item__price">800&#36;</p>
+                  </div>
+                </a>
+              </li>
+              <li class="section__list--item">
+                <a class="item__link" href="#">
+                  <div class="item__icons">
+                    <button class="icon-favorite"></button>
+                    <button class="icon-basket"></button>
+                  </div>
+                  <img
+                    class="item__image"
+                    src="img/laptop/img-full.png"
+                    alt="image"
+                  />
+                  <div class="item__info">
+                    <p class="item__desc">
+                      HP Pavilion Gaming 15-ec0031ur Dark
+                    </p>
+                    <p class="item__price">800&#36;</p>
+                  </div>
+                </a>
+              </li>
+              <li class="section__list--item">
+                <a class="item__link" href="#">
+                  <div class="item__icons">
+                    <button class="icon-favorite"></button>
+                    <button class="icon-basket"></button>
+                  </div>
+                  <img
+                    class="item__image"
+                    src="img/laptop/img-full.png"
+                    alt="image"
+                  />
+                  <div class="item__info">
+                    <p class="item__desc">
+                      HP Pavilion Gaming 15-ec0031ur Dark
+                    </p>
+                    <p class="item__price">800&#36;</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="show-more">
+              <a class="show-more__link" href="#">Show more</a>
+            </div>
+          </section>
+        </div>
+        <div class="row">
+          <div class="additional col-12">
+            <ul class="additional__list">
+              <li class="additional__item">
+                <h3 class="additional__item--title">We offer</h3>
+                <p class="additional__item--desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  odio repellat, fugit consectetur quam ut voluptas porro
+                  recusandae optio in obcaecati illo exercitationem dolore quas
+                  id, voluptate molestias minus neque!
+                </p>
+              </li>
+              <li class="additional__item">
+                <h3 class="additional__item--title">See also</h3>
+                <p class="additional__item--desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Animi impedit quis culpa repudiandae aut quos numquam
+                  distinctio doloremque, at veniam ipsum mollitia dolor ab. Sit
+                  libero modi nam deserunt harum.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </main>
@@ -409,43 +442,49 @@
     <div class="wrapper-footer">
       <footer class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="footer-block">
-              <div class="row">
-                <div class="col-12 col-md-4 col-lg-3">
-                  <a class="footer-reference-main" href="#">Store</a>
-                  <div class="check-sup-block">
-                    <div class="footer-check-sup checkout">
-                      <p class="check-sup-title">Checkout</p>
-                      <p class="checkout-phone">044-444-44-44</p>
-                    </div>
-                    <div class="footer-check-sup">
-                      <p class="check-sup-title">Support</p>
-                      <p class="support-phone">044-555-55-55</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-8 col-lg-6 align-self-center">
-                  <nav class="footer-nav">
-                    <ul class="footer-nav-list">
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Career</a></li>
-                      <li><a href="#">Contact us</a></li>
-                      <li><a href="#">News</a></li>
-                      <li><a href="#">Delivery</a></li>
-                      <li><a href="#">Mass media</a></li>
-                    </ul>
-                  </nav>
-                </div>
-                <div class="col-12 col-lg-3 align-self-center">
-                  <ul class="footer-mobile-list">
-                    <li><a class="apple" href="#">App Store</a></li>
-                    <li><a class="google" href="#">Play Market</a></li>
-                  </ul>
-                </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <a class="footer-reference-main" href="#">Store</a>
+            <div class="check-suppport">
+              <div class="check-suppport__block">
+                <p class="check-suppport__block--title">Checkout</p>
+                <p class="check-suppport__block--phone">044-444-44-44</p>
+              </div>
+              <div class="check-suppport__block">
+                <p class="check-suppport__block--title">Support</p>
+                <p class="check-suppport__block--phone">044-555-55-55</p>
               </div>
             </div>
           </div>
+          <nav class="footer-nav col-12 col-md-8 col-lg-6 align-self-center">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__list--item">
+                <a class="footer-nav__list--link" href="#">About us</a>
+              </li>
+              <li class="footer-nav__list--item">
+                <a class="footer-nav__list--link" href="#">Career</a>
+              </li>
+              <li class="footer-nav__list--item">
+                <a class="footer-nav__list--link" href="#">Contact us</a>
+              </li>
+              <li class="footer-nav__list--item">
+                <a class="footer-nav__list--link" href="#">News</a>
+              </li>
+              <li class="footer-nav__list--item">
+                <a class="footer-nav__list--link" href="#">Delivery</a>
+              </li>
+              <li class="footer-nav__list--item">
+                <a class="footer-nav__list--link" href="#">Mass media</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-list col-12 col-lg-3 align-self-center">
+            <li class="mobile-list__item">
+              <a class="apple mobile-list__item--link" href="#">App Store</a>
+            </li>
+            <li class="mobile-list__item">
+              <a class="google mobile-list__item--link" href="#">Play Market</a>
+            </li>
+          </ul>
         </div>
       </footer>
     </div>

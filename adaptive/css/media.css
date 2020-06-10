@@ -2,12 +2,10 @@
   .banner {
     height: 60px;
   }
-  .section-laptops-list li:not(:last-child),
-  .section-popular-list li:not(:last-child) {
+  .section__list li:not(:last-child) {
     margin-bottom: 20px;
   }
-  .section-laptops-list li,
-  .section-popular-list li {
+  .section__list li {
     margin-left: auto;
     margin-right: auto;
   }
@@ -22,7 +20,7 @@
     height: 40px;
   }
 
-  .nav-list {
+  .page-nav__list {
     display: flex;
     flex-wrap: wrap;
   }
@@ -30,75 +28,72 @@
   .store-catalogue {
     display: flex;
   }
-  .store-catalogue a {
+  .store-catalogue__link {
     width: 255px;
   }
-  .slider-promotions {
+  .slider-promo {
     width: 310px;
     display: block;
   }
-  .aside-menu li {
+  .aside__menu--item {
     width: 200px;
   }
-  .section-laptops-list,
-  .section-popular-list {
+  .section__list {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .check-sup-block {
+  .check-suppport {
     display: flex;
     justify-content: space-between;
   }
 
-  .footer-nav-list {
+  .footer-nav__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .footer-nav-list li {
+  .footer-nav__list--item {
     width: 33.3333%;
     display: flex;
   }
-  .footer-nav-list li:nth-child(2),
-  .footer-nav-list li:nth-child(5) {
+  .footer-nav__list--item:nth-child(2),
+  .footer-nav__list--item:nth-child(5) {
     justify-content: center;
   }
-  .footer-nav-list li:nth-child(3n) {
+  .footer-nav__list--item:nth-child(3n) {
     justify-content: flex-end;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .nav-list li {
+  .page-nav__list li {
     width: 33.3333%;
     display: flex;
   }
-  .nav-list li:nth-child(2),
-  .nav-list li:nth-child(5) {
+  .page-nav__list li:nth-child(2),
+  .page-nav__list li:nth-child(5) {
     justify-content: center;
   }
-  .nav-list li:nth-child(3n) {
+  .page-nav__list li:nth-child(3n) {
     justify-content: flex-end;
   }
-  .input-search input {
+  .form__item--search {
     width: 460px;
   }
-  .slider-promotions {
+  .slider-promo {
     width: 310px;
   }
-  .section-laptops-list li:not(:nth-last-child(-n + 2)),
-  .section-popular-list li:not(:nth-last-child(-n + 2)) {
+  .section__list li:not(:nth-last-child(-n + 2)) {
     margin-bottom: 40px;
   }
-  .section-laptops-list li:nth-child(2n + 1),
-  .section-popular-list li:nth-child(2n + 1) {
+  .section__list li:nth-child(2n + 1) {
     margin-right: auto;
   }
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
-  .footer-mobile-list {
+  .mobile-list {
     flex-direction: row;
   }
   .apple {
@@ -107,40 +102,38 @@
 }
 
 @media (min-width: 768px) {
-  .nav-list {
+  .page-nav__list {
     justify-content: space-between;
   }
-  .store-catalogue a {
+  .store-catalogue__link {
     width: 50%;
   }
-  .input-search input {
+  .form__item--search {
     flex-grow: 2;
   }
-  .check-sup-block {
+  .check-suppport {
     flex-direction: column;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .slider-promotions {
+  .slider-promo {
     width: 500px;
   }
 
-  .section-laptops-list,
-  .section-popular-list {
+  .section__list {
     justify-content: space-between;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  .section-laptops-list li:not(:nth-last-child(-n + 3)),
-  .section-popular-list li:not(:nth-last-child(-n + 3)) {
+  .section__list li:not(:nth-last-child(-n + 3)) {
     margin-bottom: 40px;
   }
 }
 
 @media (min-width: 992px) {
-  .list-icons {
+  .header-icons {
     display: flex;
     margin-left: -15px;
     justify-content: space-between;
@@ -148,7 +141,7 @@
   .manufacture {
     display: flex;
   }
-  .footer-mobile-list li {
+  .mobile-list__item {
     display: flex;
     justify-content: flex-end;
   }
@@ -158,25 +151,23 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .slider-promotions {
+  .slider-promo {
     width: 730px;
   }
-  .section-laptops-list li:not(:nth-child(3n)),
-  .section-popular-list li:not(:nth-child(3n)) {
+  .section__list li:not(:nth-child(3n)) {
     margin-right: 200px;
   }
 }
 
 @media (min-width: 1200px) {
-  .slider-promotions {
+  .slider-promo {
     width: 910px;
   }
-  .section-laptops-list,
-  .section-popular-list {
+  .section__list {
     justify-content: space-between;
   }
 
-  .footer-nav-list {
+  .footer-nav__list {
     justify-content: space-between;
   }
 }
