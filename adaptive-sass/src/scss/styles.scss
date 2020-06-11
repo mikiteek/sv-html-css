@@ -73,14 +73,16 @@ $font-montserrat: 'Montserrat', sans-serif;
   @extend %jcc;
 }
 /* H E A D E R */
-/* page-nav row*/
 .wrapper-header {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #ff6624;
 }
+.page-title {
+  @include font-style($font-montserrat, 30px, 1.5, bold, #333);
+}
 .page-nav__list--link {
-  @include font-style($font-montserrat, 18px, 1.6, 400, #333);
+  @include font-style($font-montserrat, 20px, 1.6, 400, #242121);
   &:hover,
   &:focus {
     color: rgb(163, 41, 41);
@@ -91,7 +93,7 @@ $font-montserrat: 'Montserrat', sans-serif;
   @extend %df;
   @extend %aic;
   @extend %jcc;
-  @include font-style($font-montserrat, 18px, 1.6, 400, #fff, uppercase);
+  @include font-style($font-montserrat, 18px, 1.6, 400, #242121);
   width: 290px;
   height: 35px;
   background-color: #428bca;
@@ -111,7 +113,7 @@ $font-montserrat: 'Montserrat', sans-serif;
 .form__item {
   height: 35px;
   border-radius: 3px;
-  @include font-style($font-montserrat, 16px, 1.6, 400, #fff, uppercase);
+  @include font-style($font-montserrat, 16px, 1.6, bold, #242121);
 }
 .form__item--btn {
   width: 50px;
@@ -149,19 +151,21 @@ $font-montserrat: 'Montserrat', sans-serif;
 .aside-slider {
   @extend %df;
 }
-.aside-menu {
+.aside__menu {
   @extend %df;
   @extend %fd-col;
   @extend %jc-b;
   width: 100%;
   height: 100%;
 }
-.aside__menu--item {
-  @include font-style($font-montserrat, 20px, 30px, 400, #fff);
+
+.aside__menu--link {
+  @include font-style($font-montserrat, 20px, 30px, 400, #242121);
+  &:hover {
+    color: #00f;
+  }
 }
-.aside__menu--link:hover {
-  color: #00f;
-}
+
 .slider-promo {
   width: 500px;
   display: none;
@@ -234,14 +238,13 @@ $font-montserrat: 'Montserrat', sans-serif;
   display: none;
 }
 .manufacture__list {
+  width: 100%;
   @extend %df;
   @extend %aic;
   @extend %jc-b;
 }
 .manufacture__list--link {
-  font-size: 20px;
-  font-weight: 600;
-  color: #000;
+  @include font-style($font-montserrat, 20px, 1.2, 600, #242121);
   &:hover,
   &:focus {
     color: #00f;
@@ -307,12 +310,6 @@ $font-montserrat: 'Montserrat', sans-serif;
   top: 8px;
   right: 0px;
   z-index: -1;
-  &:hover {
-    background-color: rgb(33, 184, 114);
-    -webkit-transition: background-color 0.2s linear;
-    -o-transition: background-color 0.2s linear;
-    transition: background-color 0.2s linear;
-  }
 }
 .item__icons--btn {
   border: none;
@@ -347,11 +344,11 @@ $font-montserrat: 'Montserrat', sans-serif;
 }
 /* Block with additional information*/
 .additional__item--title {
-  @include font-style($font-montserrat, 30px, 1.2, bold, #000);
+  @include font-style($font-montserrat, 30px, 1.5, bold, #000);
   margin-bottom: 20px;
 }
 .additional__item--desc {
-  @include font-style($font-montserrat, 18px, 24, 400, #000);
+  @include font-style($font-montserrat, 18px, 1.5, 400, #000);
   margin-bottom: 20px;
 }
 
@@ -373,11 +370,16 @@ $font-montserrat: 'Montserrat', sans-serif;
   width: 200px;
   height: 35px;
   background-color: #428bca;
-  @include font-style($font-montserrat, 18px, 24, 400, #000);
+  @include font-style($font-montserrat, 18px, 1.2, 400, #000);
   border: #fff solid 2px;
   border-radius: 3px;
 }
+.check-suppport__block--title,
+.check-suppport__block--phone {
+  @include font-style($font-montserrat, 20px, 1.6, 400, #000);
+}
 .footer-nav__list--link {
+  @include font-style($font-montserrat, 18px, 2, 400, #242121);
   &:hover {
     color: #00f;
   }
@@ -393,10 +395,11 @@ $font-montserrat: 'Montserrat', sans-serif;
   width: 200px;
   height: 40px;
   background-color: #000;
-  color: #fff;
   border: 1px solid #fff;
   border-radius: 5px;
+  @include font-style($font-montserrat, 18px, 1.5, 400, #fff);
 }
+
 /* visually-hidden helper */
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
